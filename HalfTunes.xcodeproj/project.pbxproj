@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		89E006D02020FD14008A3A7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89E006CF2020FD14008A3A7F /* Assets.xcassets */; };
 		89E006D32020FD14008A3A7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E006D12020FD14008A3A7F /* LaunchScreen.storyboard */; };
+		89E006E32020FED6008A3A7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E006E22020FED6008A3A7F /* AppDelegate.swift */; };
+		89E006E52020FF21008A3A7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E006E42020FF21008A3A7F /* Main.storyboard */; };
+		89E006E72020FF71008A3A7F /* StoryboardSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E006E62020FF71008A3A7F /* StoryboardSupport.swift */; };
+		89E006E92020FFDE008A3A7F /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E006E82020FFDE008A3A7F /* Track.swift */; };
+		89E006EB20210010008A3A7F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E006EA20210010008A3A7F /* SearchViewController.swift */; };
+		89E006ED2021006F008A3A7F /* SearchVC+SearchBarDelagate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E006EC2021006F008A3A7F /* SearchVC+SearchBarDelagate.swift */; };
+		89E006EF202100AE008A3A7F /* QueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E006EE202100AE008A3A7F /* QueryService.swift */; };
+		89E006F1202100D5008A3A7F /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E006F0202100D5008A3A7F /* DownloadService.swift */; };
+		89E006F6202101B9008A3A7F /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E006F5202101B9008A3A7F /* TrackCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +25,15 @@
 		89E006CF2020FD14008A3A7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89E006D22020FD14008A3A7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89E006D42020FD14008A3A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89E006E22020FED6008A3A7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		89E006E42020FF21008A3A7F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		89E006E62020FF71008A3A7F /* StoryboardSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardSupport.swift; sourceTree = "<group>"; };
+		89E006E82020FFDE008A3A7F /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		89E006EA20210010008A3A7F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		89E006EC2021006F008A3A7F /* SearchVC+SearchBarDelagate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchVC+SearchBarDelagate.swift"; sourceTree = "<group>"; };
+		89E006EE202100AE008A3A7F /* QueryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryService.swift; sourceTree = "<group>"; };
+		89E006F0202100D5008A3A7F /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
+		89E006F5202101B9008A3A7F /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,11 +66,60 @@
 		89E006C72020FD14008A3A7F /* HalfTunes */ = {
 			isa = PBXGroup;
 			children = (
+				89E006F42021019B008A3A7F /* View */,
+				89E006DE2020FE85008A3A7F /* Model */,
+				89E006DF2020FE91008A3A7F /* Controller */,
+				89E006E02020FEA1008A3A7F /* Networking */,
+				89E006E12020FEAC008A3A7F /* SupportingFiles */,
+			);
+			path = HalfTunes;
+			sourceTree = "<group>";
+		};
+		89E006DE2020FE85008A3A7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				89E006E82020FFDE008A3A7F /* Track.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		89E006DF2020FE91008A3A7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				89E006EA20210010008A3A7F /* SearchViewController.swift */,
+				89E006EC2021006F008A3A7F /* SearchVC+SearchBarDelagate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		89E006E02020FEA1008A3A7F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				89E006EE202100AE008A3A7F /* QueryService.swift */,
+				89E006F0202100D5008A3A7F /* DownloadService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		89E006E12020FEAC008A3A7F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				89E006E22020FED6008A3A7F /* AppDelegate.swift */,
+				89E006E42020FF21008A3A7F /* Main.storyboard */,
+				89E006E62020FF71008A3A7F /* StoryboardSupport.swift */,
 				89E006CF2020FD14008A3A7F /* Assets.xcassets */,
 				89E006D12020FD14008A3A7F /* LaunchScreen.storyboard */,
 				89E006D42020FD14008A3A7F /* Info.plist */,
 			);
-			path = HalfTunes;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		89E006F42021019B008A3A7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89E006F5202101B9008A3A7F /* TrackCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +154,7 @@
 				TargetAttributes = {
 					89E006C42020FD14008A3A7F = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -114,6 +182,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89E006E52020FF21008A3A7F /* Main.storyboard in Resources */,
 				89E006D32020FD14008A3A7F /* LaunchScreen.storyboard in Resources */,
 				89E006D02020FD14008A3A7F /* Assets.xcassets in Resources */,
 			);
@@ -126,6 +195,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89E006ED2021006F008A3A7F /* SearchVC+SearchBarDelagate.swift in Sources */,
+				89E006F1202100D5008A3A7F /* DownloadService.swift in Sources */,
+				89E006EB20210010008A3A7F /* SearchViewController.swift in Sources */,
+				89E006E32020FED6008A3A7F /* AppDelegate.swift in Sources */,
+				89E006EF202100AE008A3A7F /* QueryService.swift in Sources */,
+				89E006E72020FF71008A3A7F /* StoryboardSupport.swift in Sources */,
+				89E006E92020FFDE008A3A7F /* Track.swift in Sources */,
+				89E006F6202101B9008A3A7F /* TrackCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,12 +331,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 997RL2KYD9;
-				INFOPLIST_FILE = HalfTunes/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HalfTunes/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeffripke.HalfTunes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -269,12 +351,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 997RL2KYD9;
-				INFOPLIST_FILE = HalfTunes/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HalfTunes/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeffripke.HalfTunes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
