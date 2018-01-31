@@ -18,6 +18,7 @@
 		89E006EF202100AE008A3A7F /* QueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E006EE202100AE008A3A7F /* QueryService.swift */; };
 		89E006F1202100D5008A3A7F /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E006F0202100D5008A3A7F /* DownloadService.swift */; };
 		89E006F6202101B9008A3A7F /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E006F5202101B9008A3A7F /* TrackCell.swift */; };
+		89EA009C2022364A00D69EFF /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EA009B2022364A00D69EFF /* Download.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		89E006EE202100AE008A3A7F /* QueryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryService.swift; sourceTree = "<group>"; };
 		89E006F0202100D5008A3A7F /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
 		89E006F5202101B9008A3A7F /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
+		89EA009B2022364A00D69EFF /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				89E006E82020FFDE008A3A7F /* Track.swift */,
+				89EA009B2022364A00D69EFF /* Download.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89EA009C2022364A00D69EFF /* Download.swift in Sources */,
 				89E006ED2021006F008A3A7F /* SearchVC+SearchBarDelagate.swift in Sources */,
 				89E006F1202100D5008A3A7F /* DownloadService.swift in Sources */,
 				89E006EB20210010008A3A7F /* SearchViewController.swift in Sources */,
